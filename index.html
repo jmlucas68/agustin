@@ -10,7 +10,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: Georgia, serif;
             line-height: 1.6;
@@ -18,13 +18,13 @@
             background: linear-gradient(135deg, #f5f3f0 0%, #e8e1d6 100%);
             min-height: 100vh;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         header {
             background: linear-gradient(135deg, #8b4513 0%, #654321 100%);
             color: white;
@@ -33,19 +33,19 @@
             margin-bottom: 2rem;
             box-shadow: 0 2px 10px rgba(0,0,0,0.3);
         }
-        
+
         h1 {
             font-size: 3rem;
             margin-bottom: 0.5rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
-        
+
         .subtitle {
             font-size: 1.3rem;
             opacity: 0.9;
             font-weight: 300;
         }
-        
+
         nav {
             background: #654321;
             padding: 1rem 0;
@@ -55,34 +55,34 @@
             top: 0;
             z-index: 100;
         }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        nav li {
-            margin: 0 0.5rem;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.7rem 1.2rem;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
-        
-        nav a:hover,
-        nav a.active {
-            background: #8b4513;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            nav li {
+                margin: 0 0.5rem;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 0.7rem 1.2rem;
+                border-radius: 25px;
+                transition: all 0.3s ease;
+                font-weight: 500;
+            }
+
+                nav a:hover,
+                nav a.active {
+                    background: #8b4513;
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                }
+
         .hero {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -90,19 +90,19 @@
             margin-bottom: 4rem;
             align-items: center;
         }
-        
+
         .hero-content h2 {
             color: #8b4513;
             margin-bottom: 1.5rem;
             font-size: 2.2rem;
         }
-        
+
         .hero-content p {
             font-size: 1.15rem;
             margin-bottom: 1.5rem;
             text-align: justify;
         }
-        
+
         .dates {
             background: linear-gradient(135deg, #8b4513 0%, #654321 100%);
             color: white;
@@ -114,7 +114,7 @@
             margin: 2rem 0;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
-        
+
         .quote {
             background: linear-gradient(135deg, #fff8dc 0%, #f5deb3 100%);
             padding: 2.5rem;
@@ -124,26 +124,26 @@
             text-align: center;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
-        
+
         .quote-text {
             font-style: italic;
             font-size: 1.4rem;
             color: #654321;
             margin-bottom: 1rem;
         }
-        
+
         .quote-author {
             font-weight: bold;
             color: #8b4513;
         }
-        
+
         .sections {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
             margin: 3rem 0;
         }
-        
+
         .section-card {
             background: white;
             padding: 2.5rem;
@@ -152,49 +152,49 @@
             transition: all 0.3s ease;
             border-top: 4px solid #8b4513;
         }
-        
-        .section-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-        }
-        
-        .section-card h3 {
-            color: #8b4513;
-            margin-bottom: 1.5rem;
-            font-size: 1.6rem;
-            display: flex;
-            align-items: center;
-        }
-        
-        .section-card h3::before {
-            content: attr(data-icon);
-            margin-right: 0.5rem;
-            font-size: 1.8rem;
-        }
-        
-        .section-card p {
-            margin-bottom: 2rem;
-            color: #555;
-            line-height: 1.7;
-        }
-        
-        .section-card a {
-            display: inline-block;
-            background: linear-gradient(135deg, #8b4513 0%, #654321 100%);
-            color: white;
-            padding: 0.8rem 2rem;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        }
-        
-        .section-card a:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        }
-        
+
+            .section-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+            }
+
+            .section-card h3 {
+                color: #8b4513;
+                margin-bottom: 1.5rem;
+                font-size: 1.6rem;
+                display: flex;
+                align-items: center;
+            }
+
+                .section-card h3::before {
+                    content: attr(data-icon);
+                    margin-right: 0.5rem;
+                    font-size: 1.8rem;
+                }
+
+            .section-card p {
+                margin-bottom: 2rem;
+                color: #555;
+                line-height: 1.7;
+            }
+
+            .section-card a {
+                display: inline-block;
+                background: linear-gradient(135deg, #8b4513 0%, #654321 100%);
+                color: white;
+                padding: 0.8rem 2rem;
+                text-decoration: none;
+                border-radius: 25px;
+                font-weight: bold;
+                transition: all 0.3s ease;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            }
+
+                .section-card a:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+                }
+
         .highlight {
             background: linear-gradient(135deg, #fff8dc 0%, #f5deb3 100%);
             padding: 2.5rem;
@@ -203,23 +203,23 @@
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
-        
-        .highlight h3 {
-            color: #8b4513;
-            margin-bottom: 1.5rem;
-            font-size: 1.5rem;
-        }
-        
-        .highlight ul {
-            margin-top: 1rem;
-            padding-left: 2rem;
-        }
-        
-        .highlight li {
-            margin-bottom: 0.8rem;
-            line-height: 1.6;
-        }
-        
+
+            .highlight h3 {
+                color: #8b4513;
+                margin-bottom: 1.5rem;
+                font-size: 1.5rem;
+            }
+
+            .highlight ul {
+                margin-top: 1rem;
+                padding-left: 2rem;
+            }
+
+            .highlight li {
+                margin-bottom: 0.8rem;
+                line-height: 1.6;
+            }
+
         footer {
             background: #654321;
             color: white;
@@ -227,30 +227,30 @@
             padding: 2rem 0;
             margin-top: 4rem;
         }
-        
+
         @media (max-width: 768px) {
             .hero {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
-            
+
             h1 {
                 font-size: 2.2rem;
             }
-            
+
             nav ul {
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             nav li {
                 margin: 0.5rem 0;
             }
-            
+
             .sections {
                 grid-template-columns: 1fr;
             }
-            
+
             .container {
                 padding: 15px;
             }
@@ -286,7 +286,7 @@
                 <h2>Aurelius Augustinus Hipponensis</h2>
                 <div class="dates">354 - 430 d.C.</div>
                 <p>San Agustín de Hipona fue uno de los más grandes pensadores de la historia del cristianismo y la filosofía occidental. Sus obras, especialmente las <strong>Confesiones</strong> y <strong>La Ciudad de Dios</strong>, han influido profundamente en el pensamiento occidental durante más de 1500 años.</p>
-                
+
                 <p>Filósofo, teólogo y Doctor de la Iglesia, San Agustín desarrolló una síntesis única entre la filosofía platónica y la doctrina cristiana, estableciendo las bases del pensamiento medieval y moderno.</p>
             </div>
             <div class="hero-image">
@@ -360,64 +360,36 @@
 
         <section id="obras" class="highlight">
             <h3>📖 Obras Principales con Enlaces</h3>
-            
-            <h4>Las Confesiones (397-400 d.C.)</h4>
-            <p><strong>Enlaces gratuitos:</strong></p>
-            <ul>
-                <li><a href="https://archive.org/details/san-agustin-de-hipona.-confesiones-ocr-g-2010" target="_blank">Archive.org (Confesiones 2010)</a></li>
-                <li><a href="https://www.cervantesvirtual.com/obra-visor/confesiones--0/html/" target="_blank">Cervantes Virtual</a></li>
-                <li><a href="https://www.augustinus.it/spagnolo/confessioni/index.htm" target="_blank">Augustinus.it</a></li>
-            </ul>
-            <p><strong>Amazon España:</strong> <a href="https://www.amazon.es/Obras-completas-San-Agust%C3%ADn-confesiones/dp/8422021161" target="_blank">Edición BAC</a></p>
 
-            <h4>La Ciudad de Dios (413-426 d.C.)</h4>
-            <p><strong>Enlaces gratuitos:</strong></p>
-            <ul>
-                <li><a href="https://archive.org/details/la-ciudad-de-dios-tomo-i-san-agustin" target="_blank">Archive.org Tomo I</a></li>
-                <li><a href="https://archive.org/details/la-ciudad-de-dios-tomo-ii-san-agstin" target="_blank">Archive.org Tomo II</a></li>
-                <li><a href="https://www.augustinus.it/spagnolo/cdd/index.htm" target="_blank">Augustinus.it</a></li>
-            </ul>
-            <p><strong>Amazon España:</strong> <a href="https://www.amazon.es/Obras-completas-San-Agust%C3%ADn-XVII/dp/8479148802" target="_blank">Edición BAC</a></p>
-
-            <h4>Sobre la Trinidad (399-419 d.C.)</h4>
-            <p><strong>Enlaces gratuitos:</strong></p>
-            <ul>
-                <li><a href="https://www.mercaba.es/teologia/trinidad_de_agustin.pdf" target="_blank">Mercaba.es PDF</a></li>
-                <li><a href="https://www.augustinus.it/spagnolo/trinita/index.htm" target="_blank">Augustinus.it</a></li>
-                <li><a href="https://archive.org/details/05DeTrinitate" target="_blank">Archive.org</a></li>
-            </ul>
-
-            <h4>Soliloquios (386-387 d.C.)</h4>
-            <p><strong>Enlaces gratuitos:</strong></p>
-            <ul>
-                <li><a href="https://www.mercaba.es/teologia/soliloquios_de_agustin.pdf" target="_blank">Mercaba.es PDF</a></li>
-                <li><a href="https://www.augustinus.it/spagnolo/soliloqui/index.htm" target="_blank">Augustinus.it</a></li>
-            </ul>
+            <div id="obras-container">
+                <!-- El contenido de las obras se cargará aquí dinámicamente -->
+                <p>Cargando obras...</p>
+            </div>
 
             <p><strong>Colección completa:</strong> <a href="https://www.augustinus.it/spagnolo/" target="_blank">Augustinus.it - Todas las obras en español</a></p>
         </section>
 
         <section id="pensamiento" class="highlight">
             <h3>🧠 Pensamiento Filosófico y Teológico</h3>
-            
+
             <h4>Filosofía del Tiempo</h4>
             <div class="quote">
                 <div class="quote-text">"¿Qué es, pues, el tiempo? Si nadie me lo pregunta, lo sé; si quiero explicárselo al que me lo pregunta, no lo sé."</div>
                 <div class="quote-author">— Confesiones, Libro XI</div>
             </div>
-            
+
             <h4>Teoría del Conocimiento</h4>
             <div class="quote">
                 <div class="quote-text">"No busques fuera de ti; vuélvete hacia ti mismo, en el hombre interior habita la verdad."</div>
                 <div class="quote-author">— Sobre la Verdadera Religión</div>
             </div>
-            
+
             <h4>Doctrina de la Gracia</h4>
             <div class="quote">
                 <div class="quote-text">"Danos lo que mandas y manda lo que quieras."</div>
                 <div class="quote-author">— Confesiones, Libro X</div>
             </div>
-            
+
             <h4>Las Dos Ciudades</h4>
             <div class="quote">
                 <div class="quote-text">"Dos amores fundaron dos ciudades: el amor de sí mismo hasta el desprecio de Dios, la terrena; el amor de Dios hasta el desprecio de sí mismo, la celestial."</div>
@@ -427,7 +399,7 @@
 
         <section id="influencias" class="highlight">
             <h3>🌟 Influencias Recibidas y Ejercidas</h3>
-            
+
             <h4>Influencias Recibidas:</h4>
             <ul>
                 <li><strong>Platón y Neoplatonismo:</strong> Especialmente Plotino. La teoría de las Ideas, el mundo inteligible</li>
@@ -436,7 +408,7 @@
                 <li><strong>San Ambrosio:</strong> Maestro espiritual, exégesis alegórica</li>
                 <li><strong>Maniqueísmo:</strong> Dualismo (posteriormente rechazado)</li>
             </ul>
-            
+
             <h4>Influencias Ejercidas:</h4>
             <ul>
                 <li><strong>Tomás de Aquino:</strong> Síntesis aristotélico-agustiniana en la Escolástica</li>
@@ -449,7 +421,7 @@
 
         <section id="contexto" class="highlight">
             <h3>🏛️ Contexto Histórico</h3>
-            
+
             <h4>Imperio Romano Tardío (354-430 d.C.)</h4>
             <ul>
                 <li><strong>Crisis del siglo III:</strong> Recuperación bajo Diocleciano y Constantino</li>
@@ -458,7 +430,7 @@
                 <li><strong>Invasiones bárbaras:</strong> Saqueo de Roma (410), presión migratoria</li>
                 <li><strong>África romana:</strong> Prosperidad económica, centros culturales</li>
             </ul>
-            
+
             <h4>Controversias Religiosas</h4>
             <ul>
                 <li><strong>Donatismo:</strong> Cisma en África del Norte sobre la pureza de la Iglesia</li>
@@ -469,7 +441,7 @@
 
         <section id="teologia" class="highlight">
             <h3>⛪ Influencias Teológicas Especializadas</h3>
-            
+
             <h4>Doctrina de la Gracia</h4>
             <ul>
                 <li><strong>Pecado original:</strong> Corrupción de la naturaleza humana</li>
@@ -477,14 +449,14 @@
                 <li><strong>Predestinación:</strong> Elección divina de los salvados</li>
                 <li><strong>Impacto:</strong> Reforma protestante, jansenismo, teología de la gracia</li>
             </ul>
-            
+
             <h4>Teología Trinitaria</h4>
             <ul>
                 <li><strong>Analogías psicológicas:</strong> Memoria, inteligencia, voluntad</li>
                 <li><strong>Unidad y trinidad:</strong> Una esencia, tres personas</li>
                 <li><strong>Procesiones:</strong> Hijo por generación, Espíritu por espiración</li>
             </ul>
-            
+
             <h4>Filosofía Política Cristiana</h4>
             <ul>
                 <li><strong>Teoría de las dos ciudades:</strong> Temporal vs. eterna</li>
@@ -495,7 +467,7 @@
 
         <section id="fuentes" class="highlight">
             <h3>📚 Fuentes y Enlaces Externos</h3>
-            
+
             <h4>Recursos Digitales Principales</h4>
             <ul>
                 <li><a href="https://www.augustinus.it/spagnolo/" target="_blank">Augustinus.it</a> - Colección completa en español</li>
@@ -503,14 +475,14 @@
                 <li><a href="https://www.mercaba.es" target="_blank">Mercaba.es</a> - Biblioteca patrística</li>
                 <li><a href="https://www.cervantesvirtual.com" target="_blank">Cervantes Virtual</a> - Biblioteca digital hispánica</li>
             </ul>
-            
+
             <h4>Editoriales Académicas</h4>
             <ul>
                 <li><strong>Biblioteca de Autores Cristianos (BAC):</strong> Edición crítica completa</li>
                 <li><strong>Ciudad Nueva:</strong> Ediciones modernas con aparato crítico</li>
                 <li><strong>Rialp:</strong> Ediciones divulgativas de calidad</li>
             </ul>
-            
+
             <h4>Metodología de esta Investigación</h4>
             <ul>
                 <li>Análisis de 225+ papers académicos de Google Scholar</li>
@@ -523,160 +495,203 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 - San Agustín de Hipona (354-430 d.C.) - Página académica educativa</p>
+            <p>© 2024 - San Agustín de Hipona (354-430 d.C.) - Página académica educativa</p>
             <p>Basada en investigación académica exhaustiva con fuentes verificadas</p>
         </div>
     </footer>
 
     <script>
-        // Navegación suave
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetSection = document.getElementById(targetId);
-                if (targetSection) {
-                    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    
-                    // Actualizar enlace activo
-                    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
-                    this.classList.add('active');
-                }
-            });
-        });
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- INICIO DE LA LÓGICA PARA CARGAR OBRAS DESDE JSON ---
 
-        // Detectar sección visible
-        window.addEventListener('scroll', function() {
-            const sections = document.querySelectorAll('section[id]');
-            const navLinks = document.querySelectorAll('nav a');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                if (scrollY >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
+            fetch('obras.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('La respuesta de la red no fue correcta: ' + response.statusText);
+                    }
+                    return response.json();
+                })
+                .then(obrasData => {
+                    const container = document.getElementById('obras-container');
+                    if (container) {
+                        let htmlContent = '';
+                        obrasData.obras.forEach(obra => {
+                            htmlContent += `<h4>${obra.titulo} ${obra.periodo || ''}</h4>`;
+
+                            obra.gruposDeEnlaces.forEach(grupo => {
+                                if (grupo.etiqueta.includes("Amazon") && grupo.links.length === 1) {
+                                    htmlContent += `<p><strong>${grupo.etiqueta}</strong> <a href="${grupo.links[0].url}" target="_blank">${grupo.links[0].texto}</a></p>`;
+                                } else {
+                                    htmlContent += `<p><strong>${grupo.etiqueta}</strong></p>`;
+                                    htmlContent += '<ul>';
+                                    grupo.links.forEach(link => {
+                                        htmlContent += `<li><a href="${link.url}" target="_blank">${link.texto}</a></li>`;
+                                    });
+                                    htmlContent += '</ul>';
+                                }
+                            });
+                        });
+                        container.innerHTML = htmlContent;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error al cargar las obras desde obras.json:', error);
+                    const container = document.getElementById('obras-container');
+                    if (container) {
+                        container.innerHTML = '<p style="color: red;">No se pudieron cargar los datos de las obras. Por favor, asegúrese de que el archivo "obras.json" existe.</p>';
+                    }
+                });
+
+            // --- FIN DE LA LÓGICA PARA CARGAR OBRAS ---
+
+
+            // Navegación suave
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                        // Actualizar enlace activo
+                        document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+                        this.classList.add('active');
+                    }
+                });
             });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').substring(1) === current) {
-                    link.classList.add('active');
-                }
+
+            // Detectar sección visible
+            window.addEventListener('scroll', function () {
+                const sections = document.querySelectorAll('section[id]');
+                const navLinks = document.querySelectorAll('nav a');
+
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    if (scrollY >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').substring(1) === current) {
+                        link.classList.add('active');
+                    }
+                });
             });
         });
     </script>
+    <style>
+        #minimax-floating-ball {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 12px;
+            background: #222222;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            color: #F8F8F8;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            z-index: 9999;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            cursor: pointer;
+        }
 
-<style>
-#minimax-floating-ball {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 12px;
-  background: #222222;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  color: #F8F8F8;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  z-index: 9999;
-  transition: all 0.3s ease;
-  overflow: hidden;
-  cursor: pointer;
-}
+            #minimax-floating-ball:hover {
+                transform: translateY(-2px);
+                background: #383838;
+            }
 
-#minimax-floating-ball:hover {
-  transform: translateY(-2px);
-  background: #383838;
-}
+        .minimax-ball-content {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-.minimax-ball-content {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+        .minimax-logo-wave {
+            width: 26px;
+            height: 22px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='22' viewBox='0 0 26 22' fill='none'%3E%3Cg clip-path='url(%23clip0_3442_102412)'%3E%3Cpath d='M12.8405 14.6775C12.8405 14.9897 13.0932 15.2424 13.4055 15.2424C13.7178 15.2424 13.9705 14.9897 13.9705 14.6775V2.98254C13.9705 1.88957 13.0809 1 11.9879 1C10.895 1 10.0054 1.88957 10.0054 2.98254V11.566V17.1068C10.0054 17.5773 9.62327 17.9594 9.1528 17.9594C8.68233 17.9594 8.30021 17.5773 8.30021 17.1068V8.04469C8.30021 6.95172 7.41063 6.06215 6.31767 6.06215C5.22471 6.06215 4.33513 6.95172 4.33513 8.04469V11.8855C4.33513 12.3559 3.953 12.7381 3.48254 12.7381C3.01207 12.7381 2.62994 12.3559 2.62994 11.8855V10.4936C2.62994 10.1813 2.37725 9.92861 2.06497 9.92861C1.7527 9.92861 1.5 10.1813 1.5 10.4936V11.8855C1.5 12.9784 2.38957 13.868 3.48254 13.868C4.5755 13.868 5.46508 12.9784 5.46508 11.8855V8.04469C5.46508 7.57422 5.8472 7.19209 6.31767 7.19209C6.78814 7.19209 7.17026 7.57422 7.17026 8.04469V17.1068C7.17026 18.1998 8.05984 19.0894 9.1528 19.0894C10.2458 19.0894 11.1353 18.1998 11.1353 17.1068V2.98254C11.1353 2.51207 11.5175 2.12994 11.9879 2.12994C12.4584 2.12994 12.8405 2.51207 12.8405 2.98254V14.6775Z' fill='%23F8F8F8'/%3E%3Cpath d='M23.3278 6.06215C22.2348 6.06215 21.3452 6.95172 21.3452 8.04469V15.6143C21.3452 16.0847 20.9631 16.4669 20.4926 16.4669C20.0222 16.4669 19.6401 16.0847 19.6401 15.6143V2.98254C19.6401 1.88957 18.7505 1 17.6575 1C16.5645 1 15.675 1.88957 15.675 2.98254V19.0175C15.675 19.4879 15.2928 19.8701 14.8224 19.8701C14.3519 19.8701 13.9698 19.4879 13.9698 19.0175V17.0329C13.9698 16.7206 13.7171 16.4679 13.4048 16.4679C13.0925 16.4679 12.8398 16.7206 12.8398 17.0329V19.0175C12.8398 20.1104 13.7294 21 14.8224 21C15.9153 21 16.8049 20.1104 16.8049 19.0175V2.98254C16.8049 2.51207 17.187 2.12994 17.6575 2.12994C18.128 2.12994 18.5101 2.51207 18.5101 2.98254V15.6143C18.5101 16.7072 19.3997 17.5968 20.4926 17.5968C21.5856 17.5968 22.4752 16.7072 22.4752 15.6143V8.04469C22.4752 7.57422 22.8573 7.19209 23.3278 7.19209C23.7982 7.19209 24.1804 7.57422 24.1804 8.04469V14.6775C24.1804 14.9897 24.4331 15.2424 24.7453 15.2424C25.0576 15.2424 25.3103 14.9897 25.3103 14.6775V8.04469C25.3103 6.95172 24.4207 6.06215 23.3278 6.06215Z' fill='%23F8F8F8'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3442_102412'%3E%3Crect width='25' height='22' fill='white' transform='translate(0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
-.minimax-logo-wave {
-  width: 26px;
-  height: 22px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='22' viewBox='0 0 26 22' fill='none'%3E%3Cg clip-path='url(%23clip0_3442_102412)'%3E%3Cpath d='M12.8405 14.6775C12.8405 14.9897 13.0932 15.2424 13.4055 15.2424C13.7178 15.2424 13.9705 14.9897 13.9705 14.6775V2.98254C13.9705 1.88957 13.0809 1 11.9879 1C10.895 1 10.0054 1.88957 10.0054 2.98254V11.566V17.1068C10.0054 17.5773 9.62327 17.9594 9.1528 17.9594C8.68233 17.9594 8.30021 17.5773 8.30021 17.1068V8.04469C8.30021 6.95172 7.41063 6.06215 6.31767 6.06215C5.22471 6.06215 4.33513 6.95172 4.33513 8.04469V11.8855C4.33513 12.3559 3.953 12.7381 3.48254 12.7381C3.01207 12.7381 2.62994 12.3559 2.62994 11.8855V10.4936C2.62994 10.1813 2.37725 9.92861 2.06497 9.92861C1.7527 9.92861 1.5 10.1813 1.5 10.4936V11.8855C1.5 12.9784 2.38957 13.868 3.48254 13.868C4.5755 13.868 5.46508 12.9784 5.46508 11.8855V8.04469C5.46508 7.57422 5.8472 7.19209 6.31767 7.19209C6.78814 7.19209 7.17026 7.57422 7.17026 8.04469V17.1068C7.17026 18.1998 8.05984 19.0894 9.1528 19.0894C10.2458 19.0894 11.1353 18.1998 11.1353 17.1068V2.98254C11.1353 2.51207 11.5175 2.12994 11.9879 2.12994C12.4584 2.12994 12.8405 2.51207 12.8405 2.98254V14.6775Z' fill='%23F8F8F8'/%3E%3Cpath d='M23.3278 6.06215C22.2348 6.06215 21.3452 6.95172 21.3452 8.04469V15.6143C21.3452 16.0847 20.9631 16.4669 20.4926 16.4669C20.0222 16.4669 19.6401 16.0847 19.6401 15.6143V2.98254C19.6401 1.88957 18.7505 1 17.6575 1C16.5645 1 15.675 1.88957 15.675 2.98254V19.0175C15.675 19.4879 15.2928 19.8701 14.8224 19.8701C14.3519 19.8701 13.9698 19.4879 13.9698 19.0175V17.0329C13.9698 16.7206 13.7171 16.4679 13.4048 16.4679C13.0925 16.4679 12.8398 16.7206 12.8398 17.0329V19.0175C12.8398 20.1104 13.7294 21 14.8224 21C15.9153 21 16.8049 20.1104 16.8049 19.0175V2.98254C16.8049 2.51207 17.187 2.12994 17.6575 2.12994C18.128 2.12994 18.5101 2.51207 18.5101 2.98254V15.6143C18.5101 16.7072 19.3997 17.5968 20.4926 17.5968C21.5856 17.5968 22.4752 16.7072 22.4752 15.6143V8.04469C22.4752 7.57422 22.8573 7.19209 23.3278 7.19209C23.7982 7.19209 24.1804 7.57422 24.1804 8.04469V14.6775C24.1804 14.9897 24.4331 15.2424 24.7453 15.2424C25.0576 15.2424 25.3103 14.9897 25.3103 14.6775V8.04469C25.3103 6.95172 24.4207 6.06215 23.3278 6.06215Z' fill='%23F8F8F8'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3442_102412'%3E%3Crect width='25' height='22' fill='white' transform='translate(0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
-}
+        .minimax-ball-text {
+            font-size: 12px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
 
-.minimax-ball-text {
-  font-size: 12px;
-  font-weight: 500;
-  white-space: nowrap;
-}
+        .minimax-close-icon {
+            margin-left: 8px;
+            font-size: 16px;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.2s ease;
+        }
 
-.minimax-close-icon {
-  margin-left: 8px;
-  font-size: 16px;
-  width: 18px;
-  height: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  cursor: pointer;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
-}
+            .minimax-close-icon:hover {
+                opacity: 1;
+            }
+    </style>
+    <div id="minimax-floating-ball">
+        <div class="minimax-ball-content">
+            <div class="minimax-logo-wave"></div>
+            <span class="minimax-ball-text">Created by MiniMax Agent</span>
+        </div>
+        <div class="minimax-close-icon">×</div>
+    </div>
+    <script>
+        // Initialize floating ball functionality
+        function initFloatingBall() {
+            const ball = document.getElementById('minimax-floating-ball');
+            if (!ball) return;
 
-.minimax-close-icon:hover {
-  opacity: 1;
-}
-</style>
-<div id="minimax-floating-ball">
-  <div class="minimax-ball-content">
-    <div class="minimax-logo-wave"></div>
-    <span class="minimax-ball-text">Created by MiniMax Agent</span>
-  </div>
-  <div class="minimax-close-icon">×</div>
-</div>
-<script>
-// Initialize floating ball functionality
-function initFloatingBall() {
-  const ball = document.getElementById('minimax-floating-ball');
-  if (!ball) return;
+            // Initial animation
+            ball.style.opacity = '0';
+            ball.style.transform = 'translateY(20px)';
 
-  // Initial animation
-  ball.style.opacity = '0';
-  ball.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+                ball.style.opacity = '1';
+                ball.style.transform = 'translateY(0)';
+            }, 500);
 
-  setTimeout(() => {
-    ball.style.opacity = '1';
-    ball.style.transform = 'translateY(0)';
-  }, 500);
+            // Handle logo click
+            const ballContent = ball.querySelector('.minimax-ball-content');
+            ballContent.addEventListener('click', function (e) {
+                e.stopPropagation();
+                window.open('https://agent.minimax.io/agent', '_blank');
+                ball.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    ball.style.transform = 'scale(1)';
+                }, 100);
+            });
 
-  // Handle logo click
-  const ballContent = ball.querySelector('.minimax-ball-content');
-  ballContent.addEventListener('click', function (e) {
-    e.stopPropagation();
-    window.open('https://agent.minimax.io/agent', '_blank');
-    ball.style.transform = 'scale(0.95)';
-    setTimeout(() => {
-      ball.style.transform = 'scale(1)';
-    }, 100);
-  });
+            // Handle close button click
+            const closeIcon = ball.querySelector('.minimax-close-icon');
+            closeIcon.addEventListener('click', function (e) {
+                e.stopPropagation();
+                ball.style.opacity = '0';
+                ball.style.transform = 'translateY(20px)';
 
-  // Handle close button click
-  const closeIcon = ball.querySelector('.minimax-close-icon');
-  closeIcon.addEventListener('click', function (e) {
-    e.stopPropagation();
-    ball.style.opacity = '0';
-    ball.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    ball.style.display = 'none';
+                }, 300);
+            });
+        }
 
-    setTimeout(() => {
-      ball.style.display = 'none';
-    }, 300);
-  });
-}
-
-// Initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', initFloatingBall); 
-</script>
-
+        // Initialize when DOM is ready
+        document.addEventListener('DOMContentLoaded', initFloatingBall);
+    </script>
 </body>
 </html>

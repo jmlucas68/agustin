@@ -1,0 +1,37 @@
+{
+  "obras": [
+    {
+      "titulo": "Las Confesiones",
+      "enlaces": [
+        "https://archive.org/details/san-agustin-de-hipona.-confesiones-ocr-g-2010",
+        "https://www.cervantesvirtual.com/obra-visor/confesiones--0/html/",
+        "https://www.augustinus.it/spagnolo/confessioni/index.htm",
+        "https://www.amazon.es/Obras-completas-San-Agust%C3%ADn-confesiones/dp/8422021161"
+      ]
+    },
+    {
+      "titulo": "La Ciudad de Dios",
+      "enlaces": [
+        "https://archive.org/details/la-ciudad-de-dios-tomo-i-san-agustin",
+        "https://archive.org/details/la-ciudad-de-dios-tomo-ii-san-agstin",
+        "https://www.augustinus.it/spagnolo/cdd/index.htm",
+        "https://www.amazon.es/Obras-completas-San-Agust%C3%ADn-XVII/dp/8479148802"
+      ]
+    },
+    {
+      "titulo": "Sobre la Trinidad",
+      "enlaces": [
+        "https://www.mercaba.es/teologia/trinidad_de_agustin.pdf",
+        "https://www.augustinus.it/spagnolo/trinita/index.htm",
+        "https://archive.org/details/05DeTrinitate"
+      ]
+    },
+    {
+      "titulo": "Soliloquios",
+      "enlaces": [
+        "https://www.mercaba.es/teologia/soliloquios_de_agustin.pdf",
+        "https://www.augustinus.it/spagnolo/soliloqui/index.htm"
+      ]
+    }
+  ]
+}
