@@ -362,37 +362,8 @@
             <h3>📖 Obras Principales con Enlaces</h3>
 
             <div id="obras-container">
-                fetch('obras.json')
-                .then(response => {
-                if (!response.ok) throw new Error('Error en la red: ' + response.statusText);
-                return response.json();
-                })
-                .then(obrasData => {
-                const container = document.getElementById('obras-container');
-                if (container) {
-                let html = '';
-                obrasData[0].obras.forEach(obra => {
-                html += `<div style="margin-bottom: 1.5rem;">
-                    `;
-                    html += `<h4 style="color:#8b4513; font-size:1.3rem; margin-bottom:0.5rem;">${obra.titulo}</h4>`;
-                    html += `<ul style="padding-left:1.5rem; list-style:disc;">
-                        `;
-                        obra.enlaces.forEach(enlace => {
-                        html += `
-                        <li><a href="${enlace.url}" target="_blank" style="color: #0077cc; text-decoration: underline;">${enlace.texto}</a></li>`;
-                        });
-                        html += `
-                    </ul>
-                </div>`;
-                });
-                container.innerHTML = html;
-                }
-                })
-                .catch(error => {
-                console.error('Error al cargar obras:', error);
-                document.getElementById('obras-container').innerHTML =
-                '<p style="color:red;">No se pudieron cargar las obras. Asegúrate de que "obras.json" está en el mismo directorio.</p>';
-                });
+                <!-- El contenido de las obras se cargará aquí dinámicamente -->
+                <p>Cargando obras...</p>
             </div>
 
             <p><strong>Colección completa:</strong> <a href="https://www.augustinus.it/spagnolo/" target="_blank">Augustinus.it - Todas las obras en español</a></p>
@@ -681,46 +652,72 @@
         <div class="minimax-close-icon">×</div>
     </div>
     <script>
-        // Initialize floating ball functionality
-        function initFloatingBall() {
-            const ball = document.getElementById('minimax-floating-ball');
-            if (!ball) return;
+document.addEventListener('DOMContentLoaded', function () {
+    // Cargar obras desde obras.json modificado
+    fetch('obras.json')
+        .then(response => {
+            if (!response.ok) throw new Error('Error en la red: ' + response.statusText);
+            return response.json();
+        })
+        .then(obrasData => {
+            const container = document.getElementById('obras-container');
+            if (container) {
+                let html = '';
+                obrasData[0].obras.forEach(obra => {
+                    html += `<div style="margin-bottom: 1.5rem;">`;
+                    html += `<h4 style="color:#8b4513; font-size:1.3rem; margin-bottom:0.5rem;">${obra.titulo}</h4>`;
+                    html += `<ul style="padding-left:1.5rem; list-style:disc;">`;
+                    obra.enlaces.forEach(enlace => {
+                        html += `<li><a href="${enlace.url}" target="_blank" style="color: #0077cc; text-decoration: underline;">${enlace.texto}</a></li>`;
+                    });
+                    html += `</ul></div>`;
+                });
+                container.innerHTML = html;
+            }
+        })
+        .catch(error => {
+            console.error('Error al cargar obras:', error);
+            document.getElementById('obras-container').innerHTML =
+                '<p style="color:red;">No se pudieron cargar las obras. Asegúrate de que "obras.json" está en el mismo directorio.</p>';
+        });
 
-            // Initial animation
-            ball.style.opacity = '0';
-            ball.style.transform = 'translateY(20px)';
+    // Navegación suave
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-            setTimeout(() => {
-                ball.style.opacity = '1';
-                ball.style.transform = 'translateY(0)';
-            }, 500);
+                document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+                this.classList.add('active');
+            }
+        });
+    });
 
-            // Handle logo click
-            const ballContent = ball.querySelector('.minimax-ball-content');
-            ballContent.addEventListener('click', function (e) {
-                e.stopPropagation();
-                window.open('https://agent.minimax.io/agent', '_blank');
-                ball.style.transform = 'scale(0.95)';
-                setTimeout(() => {
-                    ball.style.transform = 'scale(1)';
-                }, 100);
-            });
+    // Marcar sección activa según scroll
+    window.addEventListener('scroll', function () {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav a');
 
-            // Handle close button click
-            const closeIcon = ball.querySelector('.minimax-close-icon');
-            closeIcon.addEventListener('click', function (e) {
-                e.stopPropagation();
-                ball.style.opacity = '0';
-                ball.style.transform = 'translateY(20px)';
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            if (scrollY >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
 
-                setTimeout(() => {
-                    ball.style.display = 'none';
-                }, 300);
-            });
-        }
-
-        // Initialize when DOM is ready
-        document.addEventListener('DOMContentLoaded', initFloatingBall);
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === current) {
+                link.classList.add('active');
+            }
+        });
+    });
+});
     </script>
+
 </body>
 </html>
