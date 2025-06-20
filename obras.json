@@ -1,0 +1,78 @@
+[
+  {
+    "obras": [
+      {
+        "titulo": "Las Confesiones",
+        "enlaces": [
+          {
+            "texto": "archive.org",
+            "url": "https://archive.org/details/san-agustin-de-hipona.-confesiones-ocr-g-2010"
+          },
+          {
+            "texto": "cervantesvirtual.com",
+            "url": "https://www.cervantesvirtual.com/obra-visor/confesiones--0/html/"
+          },
+          {
+            "texto": "augustinus.it",
+            "url": "https://www.augustinus.it/spagnolo/confessioni/index.htm"
+          },
+          {
+            "texto": "amazon.es",
+            "url": "https://www.amazon.es/Obras-completas-San-Agust%C3%ADn-confesiones/dp/8422021161"
+          }
+        ]
+      },
+      {
+        "titulo": "La Ciudad de Dios",
+        "enlaces": [
+          {
+            "texto": "archive.org",
+            "url": "https://archive.org/details/la-ciudad-de-dios-tomo-i-san-agustin"
+          },
+          {
+            "texto": "archive.org",
+            "url": "https://archive.org/details/la-ciudad-de-dios-tomo-ii-san-agstin"
+          },
+          {
+            "texto": "augustinus.it",
+            "url": "https://www.augustinus.it/spagnolo/cdd/index.htm"
+          },
+          {
+            "texto": "amazon.es",
+            "url": "https://www.amazon.es/Obras-completas-San-Agust%C3%ADn-XVII/dp/8479148802"
+          }
+        ]
+      },
+      {
+        "titulo": "Sobre la Trinidad",
+        "enlaces": [
+          {
+            "texto": "mercaba.es",
+            "url": "https://www.mercaba.es/teologia/trinidad_de_agustin.pdf"
+          },
+          {
+            "texto": "augustinus.it",
+            "url": "https://www.augustinus.it/spagnolo/trinita/index.htm"
+          },
+          {
+            "texto": "archive.org",
+            "url": "https://archive.org/details/05DeTrinitate"
+          }
+        ]
+      },
+      {
+        "titulo": "Soliloquios",
+        "enlaces": [
+          {
+            "texto": "mercaba.es",
+            "url": "https://www.mercaba.es/teologia/soliloquios_de_agustin.pdf"
+          },
+          {
+            "texto": "augustinus.it",
+            "url": "https://www.augustinus.it/spagnolo/soliloqui/index.htm"
+          }
+        ]
+      }
+    ]
+  }
+]
