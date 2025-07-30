@@ -1,4 +1,4 @@
-feat: Añadir enlace a Confesiones y actualizar imagen
+fix: Añadir placeholder para la clave de API de Gemini
 
-- Se añade un botón en la página principal para acceder a la página de las Confesiones.
-- Se actualiza la imagen en la página de las Confesiones para que apunte a un recurso local.
+- Se reemplaza la clave de API vacía por un placeholder claro ("TU_API_KEY_AQUI").
+- Se añade un comentario en el código para guiar al usuario sobre cómo obtener y configurar su propia clave de API.
