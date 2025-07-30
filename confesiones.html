@@ -251,16 +251,27 @@
                 }
 
                 const result = await response.json();
+                console.log("Respuesta completa de la API:", result); // Para depuración
 
-                // Safely access the generated text from the API response
-                if (result.candidates && result.candidates.length > 0 &&
-                    result.candidates[0].content && result.candidates[0].content.parts &&
-                    result.candidates[0].content.parts.length > 0) {
-                    return result.candidates[0].content.parts[0].text;
+                // Comprobar si la respuesta fue bloqueada o está vacía
+                if (!result.candidates || result.candidates.length === 0) {
+                    if (result.promptFeedback && result.promptFeedback.blockReason) {
+                        console.error('La solicitud a la API fue bloqueada:', result.promptFeedback);
+                        return `La solicitud fue bloqueada por la IA. Razón: ${result.promptFeedback.blockReason}. Por favor, intenta reformular la petición.`;
+                    } else {
+                        console.error("Respuesta inesperada de la API (sin candidatos):", result);
+                        return "La IA devolvió una respuesta vacía. Esto puede deberse a la configuración de seguridad o a un problema temporal. Inténtalo de nuevo.";
+                    }
+                }
+
+                // Acceder de forma segura al texto generado
+                const candidate = result.candidates[0];
+                if (candidate.content && candidate.content.parts && candidate.content.parts.length > 0) {
+                    return candidate.content.parts[0].text;
                 } else {
-                    // Handle cases where the API returns a valid but empty or unexpected response
-                    console.error("Unexpected API response structure:", result);
-                    return "No se pudo generar una respuesta. La estructura de la respuesta no es la esperada.";
+                    // El candidato existe pero no tiene contenido, verificar por qué
+                    console.error("Candidato vacío. Razón de finalización:", candidate.finishReason);
+                    return `No se pudo generar una respuesta completa. Razón: ${candidate.finishReason || 'desconocida'}.`;
                 }
             } catch (error) {
                 console.error('Error calling Gemini API:', error);

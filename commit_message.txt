@@ -1,4 +1,4 @@
-fix: Añadir placeholder para la clave de API de Gemini
+fix: Mejorar el manejo de errores de la API de Gemini
 
-- Se reemplaza la clave de API vacía por un placeholder claro ("TU_API_KEY_AQUI").
-- Se añade un comentario en el código para guiar al usuario sobre cómo obtener y configurar su propia clave de API.
+- Se añade un registro en la consola para la depuración de la respuesta de la API.
+- Se mejora el manejo de errores para mostrar mensajes más específicos si la IA bloquea la respuesta o devuelve un contenido vacío.
