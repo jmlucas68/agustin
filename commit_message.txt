@@ -1,3 +1,3 @@
-fix: Aumentar drásticamente el límite de tokens de la API
+feat: Añadir console.log para depurar los prompts enviados a la API
 
-- Se aumenta el valor de maxOutputTokens de 800 a 1500 para asegurar que la IA tenga suficiente espacio para generar respuestas completas y evitar el error MAX_TOKENS.
+- Se añaden console.log para mostrar los prompts de reflexión y oración antes de la llamada a la API de Gemini, facilitando la depuración de problemas relacionados con el tamaño o contenido del prompt.
