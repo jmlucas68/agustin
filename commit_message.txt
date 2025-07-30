@@ -1,4 +1,3 @@
-revert: Revertir los cambios de compilación de Tailwind
+fix: Aumentar el límite de tokens para la respuesta de la API
 
-- Se eliminan los ficheros de configuración de la compilación de Tailwind (package.json, tailwind.config.js, etc.).
-- Se restaura el CDN de Tailwind en confesiones.html para asegurar la funcionalidad de la página.
+- Se aumenta el valor de maxOutputTokens de 300 a 800 para permitir que la IA genere respuestas más largas y completas.
