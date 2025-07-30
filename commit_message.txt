@@ -1,0 +1,4 @@
+feat: Añadir enlace a Confesiones y actualizar imagen
+
+- Se añade un botón en la página principal para acceder a la página de las Confesiones.
+- Se actualiza la imagen en la página de las Confesiones para que apunte a un recurso local.

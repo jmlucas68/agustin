@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confesiones de S. Agustín: El Viaje del Alma</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Georgia:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for warm tones and elegant typography */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F4E1;
+            color: #333;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Georgia', serif;
+            color: #8B4513; /* Earthy brown for headings */
+        }
+        .text-accent {
+            color: #4A90E2; /* Deep blue for accents */
+        }
+        .bg-primary-dark {
+            background-color: #A0522D; /* Sienna brown */
+        }
+        .bg-secondary {
+            background-color: #FAEBD7; /* Antique white */
+        }
+        .border-primary {
+            border-color: #8B4513;
+        }
+        .shadow-custom {
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .btn-gemini {
+            background-color: #8B4513;
+            color: white;
+            transition: background-color 0.3s, transform 0.2s, opacity 0.3s;
+        }
+        .btn-gemini:hover {
+            background-color: #A0522D;
+            transform: translateY(-2px);
+        }
+        /* Modal styles */
+        .modal-overlay {
+            transition: opacity 0.3s ease;
+        }
+        .modal-content {
+            transition: transform 0.3s ease;
+        }
+        /* Spinner styles */
+        .loader {
+            border-top-color: #8B4513;
+            -webkit-animation: spinner 1.5s linear infinite;
+            animation: spinner 1.5s linear infinite;
+        }
+
+        @-webkit-keyframes spinner {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spinner {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="bg-primary-dark text-white py-8 text-center rounded-b-xl shadow-lg">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-2">Confesiones de San Agustín</h1>
+            <p class="text-xl md:text-2xl italic">El Viaje del Alma hacia la Verdad Divina</p>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="introduccion" class="py-16 md:py-24 text-center">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Un Clásico de la Literatura y la Filosofía</h2>
+            <p class="text-lg md:text-xl text-gray-700 mb-10 leading-relaxed">
+                Las "Confesiones" no son solo una autobiografía espiritual, sino una profunda meditación filosófica y teológica. En esta obra cumbre, San Agustín narra su tumultuoso camino hacia la fe cristiana, explorando temas como el pecado, el libre albedrío, la memoria, el tiempo y la búsqueda incansable de Dios. Es un testimonio sincero de su conversión y un diálogo íntimo con la divinidad.
+            </p>
+            <img src="images/Confesiones.jpg" alt="Manuscrito de las Confesiones de San Agustín" class="mx-auto rounded-xl shadow-lg mb-10 w-full md:w-3/4 object-cover h-64 md:h-80">
+        </div>
+    </section>
+
+    <!-- Secciones Clave de las Confesiones -->
+    <section id="secciones" class="py-16 md:py-24 bg-primary-light rounded-xl shadow-inner my-12">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Las Etapas de un Viaje Espiritual</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Tema 1: Infancia y Juventud (Libros I-III) -->
+                <div class="bg-secondary p-8 rounded-xl shadow-custom flex flex-col justify-between hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div>
+                        <div class="text-center mb-4"><span class="text-5xl text-accent">👶</span></div>
+                        <h3 class="text-2xl font-bold text-center mb-4">Infancia y Juventud (Libros I-III)</h3>
+                        <p class="text-gray-700 text-justify mb-4">Agustín reflexiona sobre sus primeros años, su educación, el desarrollo de su ego y la "iniquidad" inherente a la naturaleza humana desde el nacimiento. Aborda sus travesuras infantiles y su vida licenciosa como joven estudiante en Cartago, incluyendo el famoso episodio del robo de peras. Empieza a reconocer su propia tendencia al pecado y la búsqueda de placeres vanos.</p>
+                        <p class="text-gray-600 italic text-center border-t border-primary pt-4 mt-4">"¡Oh eterna Verdad, Verdadera Caridad, Amada Eternidad!"</p>
+                    </div>
+                    <button class="btn-gemini font-bold py-2 px-4 rounded-lg mt-6 w-full reflection-btn">✨ Reflexión Filosófica</button>
+                </div>
+
+                <!-- Tema 2: El Maniqueísmo y la Amistad (Libros III-VII) -->
+                <div class="bg-secondary p-8 rounded-xl shadow-custom flex flex-col justify-between hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div>
+                        <div class="text-center mb-4"><span class="text-5xl text-accent">🤝</span></div>
+                        <h3 class="text-2xl font-bold text-center mb-4">El Maniqueísmo y la Amistad (Libros III-VII)</h3>
+                        <p class="text-gray-700 text-justify mb-4">Describe su década de adhesión al Maniqueísmo, una secta que prometía una explicación racional del universo y el problema del mal. Explora sus profundas amistades, la pérdida de un amigo cercano que le causa un dolor inmenso, y cómo este suceso le lleva a cuestionar la fragilidad de las cosas terrenales y a buscar una amistad más duradera en Dios.</p>
+                        <p class="text-gray-600 italic text-center border-t border-primary pt-4 mt-4">"Tarde te amé, belleza tan antigua y tan nueva, tarde te amé."</p>
+                    </div>
+                    <button class="btn-gemini font-bold py-2 px-4 rounded-lg mt-6 w-full reflection-btn">✨ Reflexión Filosófica</button>
+                </div>
+
+                <!-- Tema 3: La Lucha y la Conversión (Libros VII-IX) -->
+                <div class="bg-secondary p-8 rounded-xl shadow-custom flex flex-col justify-between hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div>
+                        <div class="text-center mb-4"><span class="text-5xl text-accent">💡</span></div>
+                        <h3 class="text-2xl font-bold text-center mb-4">La Lucha y la Conversión (Libros VII-IX)</h3>
+                        <p class="text-gray-700 text-justify mb-4">Esta es la parte central de su relato personal. Narra su llegada a Milán, su encuentro con el obispo Ambrosio, y su progresivo desencanto con el Maniqueísmo. Describe su intensa lucha interna entre sus deseos carnales y el anhelo de verdad, culminando en la famosa escena del jardín donde escucha "Tolle, lege" y se convierte al cristianismo.</p>
+                        <p class="text-gray-600 italic text-center border-t border-primary pt-4 mt-4">"¡Toma y lee! ¡Toma y lee!"</p>
+                    </div>
+                    <button class="btn-gemini font-bold py-2 px-4 rounded-lg mt-6 w-full reflection-btn">✨ Reflexión Filosófica</button>
+                </div>
+
+                <!-- Tema 4: La Memoria y el Tiempo (Libros X-XI) -->
+                <div class="bg-secondary p-8 rounded-xl shadow-custom flex flex-col justify-between hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div>
+                        <div class="text-center mb-4"><span class="text-5xl text-accent">🕰️</span></div>
+                        <h3 class="text-2xl font-bold text-center mb-4">La Memoria y el Tiempo (Libros X-XI)</h3>
+                        <p class="text-gray-700 text-justify mb-4">Agustín se sumerge en una profunda indagación filosófica sobre la naturaleza de la memoria, un vasto palacio donde residen todas nuestras experiencias y conocimientos. Seguidamente, aborda la enigmática cuestión del tiempo, concluyendo que es una "distensión del alma" más que una realidad objetiva, y que solo en Dios reside la verdadera eternidad.</p>
+                        <p class="text-gray-600 italic text-center border-t border-primary pt-4 mt-4">"¿Qué es, pues, el tiempo? Si nadie me lo pregunta, lo sé; si quiero explicárselo al que me lo pregunta, no lo sé."</p>
+                    </div>
+                    <button class="btn-gemini font-bold py-2 px-4 rounded-lg mt-6 w-full reflection-btn">✨ Reflexión Filosófica</button>
+                </div>
+
+                <!-- Tema 5: La Creación y la Trinidad (Libros XII-XIII) -->
+                <div class="bg-secondary p-8 rounded-xl shadow-custom flex flex-col justify-between hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <div>
+                        <div class="text-center mb-4"><span class="text-5xl text-accent">🌍</span></div>
+                        <h3 class="text-2xl font-bold text-center mb-4">La Creación y la Trinidad (Libros XII-XIII)</h3>
+                        <p class="text-gray-700 text-justify mb-4">Los últimos libros se alejan del relato personal para centrarse en la exégesis del Génesis y la teología. Agustín reflexiona sobre el significado de la creación del mundo por Dios y profundiza en el misterio de la Santísima Trinidad, viéndola reflejada en la mente humana (ser, conocer, amar) y en la estructura misma de la realidad.</p>
+                        <p class="text-gray-600 italic text-center border-t border-primary pt-4 mt-4">"Grande eres, Señor, y digno de toda alabanza; grande es tu poder y tu sabiduría no tiene medida."</p>
+                    </div>
+                     <button class="btn-gemini font-bold py-2 px-4 rounded-lg mt-6 w-full reflection-btn">✨ Reflexión Filosófica</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gemini Prayer Generator -->
+    <section id="gemini-prayer" class="py-16 md:py-24 text-center">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Generador de Oraciones Agustinianas</h2>
+            <p class="text-lg md:text-xl text-gray-700 mb-10 leading-relaxed">
+                Inspirado por el estilo confesional y devocional de San Agustín, utiliza la IA para generar una oración única. Haz clic en el botón para crear una plegaria que refleje los temas de la búsqueda, el arrepentimiento y la alabanza.
+            </p>
+            <button id="generate-prayer-btn" class="btn-gemini text-xl font-bold py-4 px-8 rounded-full shadow-lg">
+                ✨ Generar una Oración al Estilo de Agustín
+            </button>
+            <div id="prayer-output" class="mt-10 p-6 bg-secondary rounded-xl shadow-inner text-left text-lg italic text-gray-800 hidden leading-relaxed">
+                <!-- Prayer will be injected here -->
+            </div>
+             <div id="prayer-loader" class="mt-8 hidden">
+                <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16 mx-auto"></div>
+                <p class="mt-4 text-gray-600">Generando oración...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-primary-dark text-white py-8 text-center rounded-t-xl shadow-lg mt-12">
+        <div class="container mx-auto px-4">
+            <p class="mb-4">&copy; 2025 Resumen de "Confesiones" de S. Agustín. Creado con IA.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Gemini Reflection -->
+    <div id="reflection-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 hidden z-50 opacity-0">
+        <div class="modal-content bg-secondary rounded-xl shadow-2xl p-8 max-w-2xl w-full transform scale-95">
+            <h3 id="modal-title" class="text-2xl font-bold mb-4 text-center">Reflexión Filosófica</h3>
+            <div id="modal-body" class="text-gray-700 text-lg leading-relaxed mb-6 max-h-96 overflow-y-auto">
+                <!-- Reflection content will be injected here -->
+            </div>
+             <div id="modal-loader" class="text-center hidden">
+                 <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-12 w-12 mx-auto"></div>
+                 <p class="mt-4 text-gray-600">Generando reflexión...</p>
+            </div>
+            <div class="text-center">
+                <button id="close-modal-btn" class="bg-primary-dark text-white font-bold py-2 px-6 rounded-lg hover:bg-opacity-90 transition">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- Gemini API Interaction ---
+
+        // The API Key is handled by the environment, so we leave it as an empty string.
+        const API_KEY = ""; 
+
+        /**
+         * Calls the Gemini API with a given prompt and handles retries with exponential backoff.
+         * @param {string} prompt The text prompt to send to the model.
+         * @returns {Promise<string>} The generated text from the API.
+         */
+        async function callGemini(prompt) {
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${API_KEY}`;
+            
+            const payload = {
+                contents: [{
+                    role: "user",
+                    parts: [{ text: prompt }]
+                }],
+                generationConfig: {
+                    temperature: 0.7,
+                    topP: 0.95,
+                    maxOutputTokens: 300,
+                }
+            };
+
+            try {
+                let response;
+                let delay = 1000; // Start with 1 second delay
+                // Retry up to 5 times with exponential backoff for network errors or rate limiting
+                for (let i = 0; i < 5; i++) {
+                    response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (response.ok) {
+                        break; // Success
+                    } else if (response.status === 429 || response.status >= 500) {
+                        // If rate limited or server error, wait and try again
+                        await new Promise(resolve => setTimeout(resolve, delay));
+                        delay *= 2; // Double the delay for the next retry
+                    } else {
+                        // For other client-side errors, don't retry
+                        throw new Error(`API request failed with status ${response.status}`);
+                    }
+                }
+                
+                if (!response || !response.ok) {
+                    throw new Error(`API request failed after retries with status ${response ? response.status : 'unknown'}`);
+                }
+
+                const result = await response.json();
+
+                // Safely access the generated text from the API response
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    return result.candidates[0].content.parts[0].text;
+                } else {
+                    // Handle cases where the API returns a valid but empty or unexpected response
+                    console.error("Unexpected API response structure:", result);
+                    return "No se pudo generar una respuesta. La estructura de la respuesta no es la esperada.";
+                }
+            } catch (error) {
+                console.error('Error calling Gemini API:', error);
+                return "Ha ocurrido un error al contactar con la IA. Por favor, inténtalo de nuevo más tarde.";
+            }
+        }
+
+
+        // --- Modal Handling ---
+        const modal = document.getElementById('reflection-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalBody = document.getElementById('modal-body');
+        const modalLoader = document.getElementById('modal-loader');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+
+        function showModal() {
+            modal.classList.remove('hidden');
+            // Use a short timeout to allow the display property to apply before starting the transition
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.querySelector('.modal-content').classList.remove('scale-95');
+            }, 10);
+        }
+
+        function hideModal() {
+            modal.classList.add('opacity-0');
+            modal.querySelector('.modal-content').classList.add('scale-95');
+            // Wait for the transition to finish before hiding the element
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        closeModalBtn.addEventListener('click', hideModal);
+        // Close modal if the user clicks on the overlay background
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                hideModal();
+            }
+        });
+
+
+        // --- Reflection Buttons ---
+        const reflectionButtons = document.querySelectorAll('.reflection-btn');
+        reflectionButtons.forEach(button => {
+            button.addEventListener('click', async () => {
+                const card = button.closest('.bg-secondary');
+                const title = card.querySelector('h3').textContent;
+                const content = card.querySelector('p').textContent.trim();
+
+                // Prepare and show the modal with a loader
+                modalTitle.textContent = `Reflexión sobre "${title}"`;
+                modalBody.innerHTML = '';
+                modalLoader.classList.remove('hidden');
+                showModal();
+                
+                const prompt = `Basado en este resumen del tema "${title}" de las Confesiones de San Agustín: "${content}", genera una reflexión filosófica o teológica breve (unas 100-150 palabras) y profunda al estilo de Agustín. Debe ser introspectiva y conectar el tema con la condición humana universal o la búsqueda de Dios. Escribe en español.`;
+
+                const reflection = await callGemini(prompt);
+                
+                // Hide loader and display the generated reflection
+                modalLoader.classList.add('hidden');
+                modalBody.innerHTML = reflection.replace(/\n/g, '<br>');
+            });
+        });
+
+
+        // --- Prayer Generator ---
+        const generatePrayerBtn = document.getElementById('generate-prayer-btn');
+        const prayerOutput = document.getElementById('prayer-output');
+        const prayerLoader = document.getElementById('prayer-loader');
+
+        generatePrayerBtn.addEventListener('click', async () => {
+            // Show loader and disable the button to prevent multiple clicks
+            prayerOutput.classList.add('hidden');
+            prayerLoader.classList.remove('hidden');
+            generatePrayerBtn.disabled = true;
+            generatePrayerBtn.classList.add('opacity-50', 'cursor-not-allowed');
+
+            const prompt = "Escribe una oración original de unas 100-120 palabras al estilo de las 'Confesiones' de San Agustín. La oración debe ser una conversación íntima con Dios, usando un lenguaje poético y reflexivo. Debe tocar temas como el reconocimiento de la propia flaqueza, la gratitud por la misericordia divina, el anhelo de la verdad y la alabanza a la grandeza de Dios. Escribe en español.";
+            
+            const prayer = await callGemini(prompt);
+
+            // Display the generated prayer and re-enable the button
+            prayerOutput.innerHTML = prayer.replace(/\n/g, '<br>');
+            prayerLoader.classList.add('hidden');
+            prayerOutput.classList.remove('hidden');
+            generatePrayerBtn.disabled = false;
+            generatePrayerBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+        });
+
+    </script>
+</body>
+</html>
