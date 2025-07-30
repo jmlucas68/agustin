@@ -1,4 +1,4 @@
-fix: Mejorar el manejo de errores de la API de Gemini
+revert: Revertir los cambios de compilación de Tailwind
 
-- Se añade un registro en la consola para la depuración de la respuesta de la API.
-- Se mejora el manejo de errores para mostrar mensajes más específicos si la IA bloquea la respuesta o devuelve un contenido vacío.
+- Se eliminan los ficheros de configuración de la compilación de Tailwind (package.json, tailwind.config.js, etc.).
+- Se restaura el CDN de Tailwind en confesiones.html para asegurar la funcionalidad de la página.
